@@ -19,12 +19,13 @@ a {
 
 /* Header Section */
 header {  
-    background-color: #f5f5dc; /* Nude color */  
+    background-color: #f2d0a1;  /* More visible nude color */
     padding: 10px 20px;  
-    display: flex; /* For layout control */  
-    justify-content: space-between; /* Company name on left, menu on right */  
+    display: flex;  
+    justify-content: space-between;  
     align-items: center;  
-    position: relative; /* Ensure normal position before sticking */  
+    position: relative;  
+    z-index: 1; /* Ensures header stays on top of content */
 }  
 
 nav ul {  
@@ -71,20 +72,24 @@ header nav ul li {
 header nav ul li a {
     font-weight: 500;
     font-size: 18px;
-    color: #4B4B4B;
+    color: #3a3a3a;
     transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: #F2D0A1;
+    color: #f3ba64;
 }
 
 /* Video Section */
 .video-section {
-    margin: 30px 0;
-    display: flex;
+    display: flex; /* Flexbox to align text and video side by side */
     justify-content: center;
+    align-items: center;
+    gap: 30px; /* Space between text and video */
     padding: 30px;
+    background-color: #f2d0a1; /* Visible nude color */
+    position: relative;
+    overflow: hidden; /* Ensures elements stay within bounds */
 }
 
 .video-container {
@@ -94,29 +99,71 @@ header nav ul li a:hover {
     overflow: hidden;
 }
 
-.video-container iframe {
+#event-video {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 10px;
 }
 
-iframe {
-    max-width: 80%;
-    height: auto;
-    margin: 20px auto; /* Centers the video horizontally */
-    border-radius: 12px; /* Rounded corners */
-    display: block;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a modern shadow */
+/* Video Container */
+.video-container {
+    flex: 1; /* Makes the video container take up available space */
+    max-width: 60%; /* Video will occupy 60% of the section */
 }
 
-#event-video {
-    width: 90%; /* Leaves space on the sides */
-    height: 500px; /* Ensure enough height for full visibility */
-    margin: 20px auto; /* Centers the video */
-    display: block; /* Ensures it's treated like a block element */
-    border-radius: 12px; /* Gives it a modern, rounded look */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); /* Adds shadow for a premium feel */
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the video */
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    max-width: 40%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+    font-size: 20px;
+    color: #333;
+    position: absolute; /* Keeps text on top of the video */
+    top: 20%; /* Positions the text more towards the center */
+    left: 10%;
+    right: 10%;
+    z-index: 2;
+}
+
+.text-content h2 {
+    font-size: 32px; /* Bigger title */
+    font-weight: 800; /* Bold title */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Button */
+.book-now-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ff6f61; /* Vibrant button color */
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #e85c50; /* Darker shade on hover */
 }
 
 /* Kanasembo Events Section */
@@ -249,6 +296,7 @@ iframe {
 .services .service-card:hover img {
     transform: scale(1.1);
 }
+
 
 /* Image Gallery Section */
 .image-gallery {
