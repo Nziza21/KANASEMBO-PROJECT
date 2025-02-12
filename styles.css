@@ -83,13 +83,12 @@ header nav ul li a:hover {
 /* Video Section */
 .video-section {
     display: flex; /* Flexbox to align text and video side by side */
-    justify-content: center;
+    justify-content: space-between; /* Creates space between the video and text */
     align-items: center;
     gap: 30px; /* Space between text and video */
     padding: 30px;
     background-color: #f2d0a1; /* Visible nude color */
     position: relative;
-    overflow: hidden; /* Ensures elements stay within bounds */
 }
 
 .video-container {
@@ -108,8 +107,9 @@ header nav ul li a:hover {
 
 /* Video Container */
 .video-container {
-    flex: 1; /* Makes the video container take up available space */
-    max-width: 60%; /* Video will occupy 60% of the section */
+    flex: 1;
+    max-width: 60%; /* Video occupies 60% */
+    position: relative;
 }
 
 .video-container iframe {
@@ -117,6 +117,27 @@ header nav ul li a:hover {
     height: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the video */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .video-section {
+        flex-direction: column; /* Stack the video and text for smaller screens */
+        padding: 20px;
+    }
+
+    .text-content {
+        max-width: 90%; /* Text takes up more space on small screens */
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 20px; /* Adds space between text and video */
+    }
+
+    .video-container {
+        max-width: 90%;
+    }
 }
 
 /* Text Content */
@@ -129,10 +150,6 @@ header nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
     font-size: 20px;
     color: #333;
-    position: absolute; /* Keeps text on top of the video */
-    top: 20%; /* Positions the text more towards the center */
-    left: 10%;
-    right: 10%;
     z-index: 2;
 }
 
