@@ -376,4 +376,191 @@ footer .social-icon {
 footer .social-icon:hover {
     color: #f3ba64; /* Hover color to match the theme */
 }
+/* Basic Reset */
+/* Default Styles for All Pages (can be adjusted) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* About Us Page Styles */
+.about-us-page {
+    background-color: #2c3e50; /* Dark background */
+    color: #ecf0f1; /* Light text for contrast */
+}
+
+.about-us-page h1, .about-us-page h2 {
+    color: #f39c12; /* Warm accent color for headings */
+}
+
+.about-us-page p {
+    color: #bdc3c7; /* Light gray for paragraphs */
+}
+
+/* Hero Section on About Us */
+.about-us-page .hero-section {
+    background-color: #34495e; /* Darker background for hero */
+    padding: 60px 0;
+}
+
+.about-us-page .hero-content h1 {
+    color: #f39c12;
+    font-size: 3rem;
+}
+
+.about-us-page .hero-content p {
+    color: #ecf0f1;
+    font-size: 1.2rem;
+}
+
+/* Company Overview Section */
+.about-us-page .company-overview {
+    background-color: #34495e; /* Lighter dark shade */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us-page .company-overview img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Mission, Vision, Values Section Styling */
+.about-us-page .mission-vision {
+    background-color: #34495e; /* Light dark background */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.about-us-page .mission-vision h2 {
+    font-size: 2.5rem;
+    color: #f39c12;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us-page .mission-vision .section-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-us-page .mission-vision .section-box {
+    background-color: #2c3e50;
+    padding: 40px;
+    width: 280px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-us-page .mission-vision .section-box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-page .mission-vision h3 {
+    color: #f39c12;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about-us-page .mission-vision p {
+    color: #bdc3c7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.about-us-page .mission-vision ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us-page .mission-vision ul li {
+    color: #bdc3c7;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Team Showcase Section */
+.about-us-page .team-showcase {
+    background-color: #34495e;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.about-us-page .team-showcase h2 {
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+.about-us-page .team-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.about-us-page .team-card {
+    background-color: #2c3e50;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.about-us-page .team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.about-us-page .team-card h3 {
+    color: #f39c12;
+    margin-top: 10px;
+}
+
+.about-us-page .team-card p {
+    color: #bdc3c7;
+    font-size: 1rem;
+}
+
+/* Footer Section */
+.about-us-page .cta-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.about-us-page .cta-footer h2 {
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.about-us-page .cta-footer p {
+    margin-bottom: 20px;
+}
+
+.about-us-page .cta-footer .contact-btn {
+    background-color: #f39c12;
+    color: #2c3e50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.about-us-page .cta-footer .contact-btn:hover {
+    background-color: #e67e22;
+}
 
