@@ -7,20 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Adding Font Awesome for icons -->
 </head>
 <body>
 
-    <script>
-        window.addEventListener('load', function() {
-          var iframe = document.getElementById('event-video');
-          var iframeSrc = iframe.src;
-          iframe.src = iframeSrc + '?autoplay=1'; // Append autoplay parameter to the URL
-        });
-      </script>
-    
-
-    <!-- Header Section -->
     <header>
         <div class="logo">Kanasembo Events</div>
         <nav>
@@ -34,33 +23,22 @@
         </nav>
     </header>
 
-   <!-- Video Section -->
-   <div class="video-section">
-    <div class="text-content">
-        <h2>Unforgettable Moments</h2>
-        <p>we specialize in creating unforgettable events, from weddings and birthdays to corporate functions. With our expert services in decor, photography, sound, and catering, we bring your vision to life with precision and style.</p>
-        <a href="#" class="book-now-btn">Book Now</a>
+    <div class="video-section">
+        <div class="text-content">
+            <h2>Unforgettable Moments</h2>
+            <p>We specialize in creating unforgettable events, from weddings and birthdays to corporate functions. With our expert services in decor, photography, sound, and catering, we bring your vision to life with precision and style.</p>
+            <a href="#" class="book-now-btn">Book Now</a>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/CwXdeH68-EA?autoplay=1&mute=1&controls=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="video-container">
-        <iframe 
-    src="https://www.youtube.com/embed/CwXdeH68-EA?autoplay=1&mute=1&controls=1" 
-    width="640" 
-    height="360" 
-    frameborder="0" 
-    allow="autoplay; fullscreen; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-    
-    </div>
-</div>
 
-    <!-- Kanasembo Events Section -->
     <section class="kanasembo-events">
         <h1>Kanasembo Events</h1>
-        <p>We specialize in creating unforgettable experiences for weddings, birthdays, corporate events, and much more. Let us bring your dream event to life!</p>
+        <p>We specialize in creating unforgettable experiences for weddings, birthdays, corporate events, and more.</p>
     </section>
 
-    <!-- Services Section -->
     <section class="services">
         <h2 class="services-heading">Our Expertise</h2>
         <div class="service-grid">
@@ -87,30 +65,25 @@
         </div>
     </section>
 
-    <!-- Images Section -->
     <section class="image-gallery">
         <div class="image">
-            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fDR8fHww" alt="Event 1">
+            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=500&auto=format&fit=crop&q=60" alt="Event 1">
         </div>
         <div class="image">
-            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29ycG9yYXRlJTIwZXZlbnRzfGVufDB8fDR8fHww" alt="Event 2">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500&auto=format&fit=crop&q=60" alt="Event 2">
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">Kanasembo Events</div>
-            <div class="contact-info">
-                <p>Contact us for more information</p>
-            </div>
-            <div class="social-media">
-                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/kanasemboevents" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
-            </div>
+    <footer class="cta-footer">
+        <h2>Ready to Experience Excellence?</h2>
+        <p>Contact us to plan your next unforgettable event.</p>
+        <button class="contact-btn">Get in Touch</button>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon"><i class="fab fa-linkedin"></i></a>
         </div>
-    </footer>    
-    
+    </footer>
+
 </body>
 </html>

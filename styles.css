@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ a {
 
 /* Header Section */
 header {  
-    background-color: #f2d0a1;  /* More visible nude color */
+    background-color: #f2d0a1; 
     padding: 10px 20px;  
     display: flex;  
     justify-content: space-between;  
@@ -32,7 +32,7 @@ nav ul {
     list-style-type: none;  
     padding: 0;  
     margin: 0;  
-    display: flex; /* Horizontal layout */  
+    display: flex; 
     gap: 20px; /* Spacing between menu items */  
 }  
 
@@ -89,7 +89,7 @@ header nav ul li a:hover {
     align-items: center;
     gap: 30px; /* Space between text and video */
     padding: 30px;
-    background-color: #f2d0a1; /* Visible nude color */
+    background-color: #f2d0a1; 
     position: relative;
 }
 
@@ -118,18 +118,18 @@ header nav ul li a:hover {
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to the video */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Make it responsive */
+/* responsiveness */
 @media (max-width: 768px) {
     .video-section {
-        flex-direction: column; /* Stack the video and text for smaller screens */
+        flex-direction: column; 
         padding: 20px;
     }
 
     .text-content {
-        max-width: 90%; /* Text takes up more space on small screens */
+        max-width: 90%; 
         position: relative;
         top: 0;
         left: 0;
@@ -147,17 +147,17 @@ header nav ul li a:hover {
     flex: 1;
     max-width: 40%;
     padding: 40px;
-    background: rgba(255, 255, 255, 0.7); /* Slightly transparent background */
+    background: rgba(255, 255, 255, 0.7); 
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
     font-size: 20px;
     color: #333;
     z-index: 2;
 }
 
 .text-content h2 {
-    font-size: 32px; /* Bigger title */
-    font-weight: 800; /* Bold title */
+    font-size: 32px; 
+    font-weight: 800; 
     margin-bottom: 20px;
     color: #333;
 }
@@ -172,7 +172,7 @@ header nav ul li a:hover {
 .book-now-btn {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #ff6f61; /* Vibrant button color */
+    background-color: #ff6f61; 
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -182,7 +182,7 @@ header nav ul li a:hover {
 }
 
 .book-now-btn:hover {
-    background-color: #e85c50; /* Darker shade on hover */
+    background-color: #e85c50; 
 }
 
 /* Kanasembo Events Section */
@@ -340,44 +340,53 @@ header nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Footer Section */
-footer {
-    background-color: #F2D0A1;
-    padding: 30px;
+/* Footer */
+.cta-footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
-    color: #4B4B4B;
 }
 
-footer .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.cta-footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-footer .contact-info p {
+.cta-footer p {
     font-size: 18px;
+    margin-bottom: 20px;
 }
 
-footer .footer-logo {
-    font-size: 24px;
+.cta-footer .contact-btn {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
     font-weight: bold;
-}
-footer .social-media {
-    display: flex;
-    gap: 20px; /* Space between icons */
+    border: none;
+    border-radius: 5px;
 }
 
-footer .social-icon {
-    font-size: 30px; /* Size of the icons */
-    color: #4B4B4B;  /* Color to match your color scheme */
-    transition: color 0.3s ease;
+.cta-footer .contact-btn:hover {
+    background-color: #e54d46;
 }
 
-footer .social-icon:hover {
-    color: #f3ba64; /* Hover color to match the theme */
+.cta-footer .social-media {
+    margin-top: 30px;
 }
-/* Basic Reset */
-/* Default Styles for All Pages (can be adjusted) */
+
+.cta-footer .social-media .social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.cta-footer .social-media .social-icon:hover {
+    color: #ff6f61;
+}
+
+/* Default Styles for All Pages */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -385,51 +394,91 @@ body {
 
 /* About Us Page Styles */
 .about-us-page {
-    background-color: #2c3e50; /* Dark background */
-    color: #ecf0f1; /* Light text for contrast */
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
 }
 
 .about-us-page h1, .about-us-page h2 {
-    color: #f39c12; /* Warm accent color for headings */
+    color: #f39c12; /* color for headings */
 }
 
 .about-us-page p {
     color: #bdc3c7; /* Light gray for paragraphs */
 }
 
-/* Hero Section on About Us */
+/* Hero Section with a Background Image and Overlay */
 .about-us-page .hero-section {
-    background-color: #34495e; /* Darker background for hero */
-    padding: 60px 0;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 0; 
+    text-align: center;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    max-height: 400px; 
+    overflow: hidden; 
+}
+
+
+.about-us-page .hero-section .hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .about-us-page .hero-content h1 {
-    color: #f39c12;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #f39c12; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
 }
 
 .about-us-page .hero-content p {
+    font-size: 1.3rem;
     color: #ecf0f1;
-    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 20px;
 }
+
+
+/* Overlay effect for the hero image */
+.about-us-page .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 0;
+}
+
 
 /* Company Overview Section */
 .about-us-page .company-overview {
-    background-color: #34495e; /* Lighter dark shade */
+    background-color: #34495e; 
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.about-us-page .company-overview img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
+.about-us-page .company-overview iframe {
+    width: 100%; 
+    max-width: 900px; 
+    height: 400px; 
+    border-radius: 10px; 
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
+
 
 /* Mission, Vision, Values Section Styling */
 .about-us-page .mission-vision {
-    background-color: #34495e; /* Light dark background */
+    background-color: #34495e; 
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -498,6 +547,7 @@ body {
 .about-us-page .team-showcase h2 {
     color: #f39c12;
     margin-bottom: 30px;
+    text-align: center; 
 }
 
 .about-us-page .team-grid {
@@ -532,35 +582,48 @@ body {
     font-size: 1rem;
 }
 
-/* Footer Section */
-.about-us-page .cta-footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 50px;
+/* Footer */
+.cta-footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
-    border-radius: 10px;
 }
 
-.about-us-page .cta-footer h2 {
-    color: #f39c12;
+.cta-footer h2 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-.about-us-page .cta-footer p {
+.cta-footer p {
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
-.about-us-page .cta-footer .contact-btn {
-    background-color: #f39c12;
-    color: #2c3e50;
-    padding: 10px 20px;
+.cta-footer .contact-btn {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1rem;
 }
 
-.about-us-page .cta-footer .contact-btn:hover {
-    background-color: #e67e22;
+.cta-footer .contact-btn:hover {
+    background-color: #e54d46;
 }
 
+.cta-footer .social-media {
+    margin-top: 30px;
+}
+
+.cta-footer .social-media .social-icon {
+    color: white;
+    font-size: 30px; 
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.cta-footer .social-media .social-icon:hover {
+    color: #ff6f61;
+}
