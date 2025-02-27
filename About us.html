@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lora&family=Open+Sans:wght@400&family=Roboto:wght@400&display=swap" rel="stylesheet">
 </head>
 <body class="about-us-page">
 
@@ -32,12 +33,26 @@
         </nav>
     </header>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <h1 class="wow-text">About Kanasembo Events</h1>
-            <p>Delivering unforgettable experiences with a touch of luxury and perfection.</p>
-        </div>
-    </section>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.addEventListener('mouseover', function() {
+        dropdown.classList.add('open');
+    });
+    dropdown.addEventListener('mouseleave', function() {
+        dropdown.classList.remove('open');
+    });
+});
+</script>
+
+<section class="about-kanasembo">
+    <h2>About Kanasembo Events</h2>
+    <p>Delivering unforgettable experiences with a touch of luxury and perfectionblending creativity with precision to ensure every detail is flawless.</p>
+    <div class="extra-info">
+        <p><strong>Why Choose Us?</strong> We specialize in tailoring each event to your unique preferences, offering expert planning and seamless execution that exceeds expectations. From intimate gatherings to grand celebrations, we make every event a remarkable experience.</p>
+        <button class="explore-btn">Explore Our Services</button>
+    </div>
+</section>
 
     <section class="company-overview">
         <h2 class="wow-text">Our Story</h2>
@@ -86,16 +101,16 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="cta-footer">
-        <h2>Ready to Experience Excellence?</h2>
-        <p>Contact us to plan your next unforgettable event.</p>
+        <h2>Ready to Start Planning Your Dream Wedding?</h2>
+        <p>Contact us today to make your wedding day unforgettable!</p>
         <button class="contact-btn">Get in Touch</button>
         <div class="social-media">
             <a href="https://twitter.com/yourprofile" class="social-icon"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/kanasemboevents" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/yourprofile" class="social-icon"><i class="fab fa-linkedin"></i></a>
         </div>
-    </footer>
-
+    </footer>    
 </body>
 </html>
