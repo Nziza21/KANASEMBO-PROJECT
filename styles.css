@@ -401,6 +401,7 @@ body {
 
 .about-us-page h1, .about-us-page h2 {
     color: #f39c12; /* color for headings */
+    z-index: 1000;
 }
 
 .about-us-page p {

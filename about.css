@@ -1,0 +1,250 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #008C8C;
+}
+
+/* Header */
+.header {
+    background-color: #1b1b1b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #008C8C;
+}
+
+.nav-links .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links .dropdown.open .dropdown-menu {
+    display: block;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(45deg, #008C8C, #1b1b1b);
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Section Styling */
+.company-overview {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.company-overview h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #008C8C;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.company-overview iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+/* Mission, Vision, Values */
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background: #f8f8f8;
+}
+
+.section-box {
+    background-color: #fff;
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.section-box:hover {
+    transform: translateY(-10px);
+}
+
+.section-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section-box ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.section-box ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Team Showcase */
+.team-showcase {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+}
+
+.team-showcase h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #008C8C;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.team-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.team-card p {
+    font-size: 18px;
+    color: #008C8C;
+}
+
+/* Footer */
+.cta-footer {
+    text-align: center;
+    background-color: #008C8C;
+    color: white;
+    padding: 60px 20px;
+}
+
+.cta-footer h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #008C8C;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #fff;
+    color: #1b1b1b;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #008C8C;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
