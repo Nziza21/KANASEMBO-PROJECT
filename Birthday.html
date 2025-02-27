@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday | Kanasembo Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header style="background-color: #f8f8f8; color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html">Birthday</a></li>
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="decor.html">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down -> Hide header
+                header.classList.add("header-hidden");
+            } else {
+                // Scrolling up -> Show header
+                header.classList.remove("header-hidden");
+            }
+            
+            lastScrollTop = currentScroll;
+        });
+    </script>
+    
+
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1495368772-d2db8b0298e3?w=1920&auto=format&fit=crop&q=60'); color: #333;">
+        <div class="hero-text">
+            <h1>Celebrate Life’s Special Moments with Us</h1>
+            <p>From intimate gatherings to grand birthday bashes, we bring your party vision to life!</p>
+            <a href="#services" class="cta-button" style="background-color: #008C8C; color: white;">Start Celebrating Now!</a>
+        </div>
+    </div>
+
+    <!-- Birthday Party Packages Section -->
+    <section class="birthday-packages" style="background-color: #f8f8f8; color: #333;">
+        <h2 class="section-title" style="color: #008C8C; text-align: center;">Our Birthday Party Packages</h2>
+        <div class="package-grid">
+            <div class="package-item">
+                <i class="fas fa-gift" style="color: #008C8C;"></i>
+                <h3>Intimate Celebrations</h3>
+                <p>Perfect for small gatherings with friends and family, personalized for an intimate touch.</p>
+            </div>
+            <div class="package-item">
+                <i class="fas fa-birthday-cake" style="color: #008C8C;"></i>
+                <h3>Themed Parties</h3>
+                <p>From superheroes to princesses, our themed parties will make your birthday unforgettable!</p>
+            </div>
+            <div class="package-item">
+                <i class="fas fa-balloon" style="color: #008C8C;"></i>
+                <h3>Grand Celebrations</h3>
+                <p>For those looking for a show-stopping event with everything you need to celebrate in style!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Party Decor Section -->
+    <section class="party-decor" style="background-color: #ffffff; color: #333;">
+        <h2 class="section-title" style="color: #008C8C; text-align: center;">Party Decor That Wows!</h2>
+        <div class="decor-gallery">
+            <div class="decor-item">
+                <img src="https://media.istockphoto.com/id/1135183699/photo/summer-evenig-terrace-with-candles-wine-and-lights.jpg?b=1&s=612x612&w=0&k=20&c=hWCkq_3g1kLDOr6INQ-fwp_mp8Kid0T7rNZn5i0eMYg=" alt="Birthday Decor 1">
+            </div>
+            <div class="decor-item">
+                <img src="https://media.istockphoto.com/id/852786000/photo/halloween-theme.jpg?b=1&s=612x612&w=0&k=20&c=_FIPLUGnOXbf_vKaZbZnaBa2l2K3hdTIv_2PtBV8LwI=" alt="Birthday Decor 2">
+            </div>
+            <div class="decor-item">
+                <img src="https://images.pexels.com/photos/30908868/pexels-photo-30908868/free-photo-of-heart-shaped-balloons-at-puerto-madero-waterfront.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Birthday Decor 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Catering Section -->
+    <section class="birthday-catering" style="background-color: #f8f8f8; color: #333;">
+        <h2 class="section-title" style="color: #008C8C; text-align: center;">Delicious Custom Menus</h2>
+        <div class="catering-info">
+            <p>Whether you need a birthday cake, finger foods, or a full-course meal, we’ve got you covered with our delicious, customized birthday menus!</p>
+        </div>
+    </section>
+
+    <!-- Client Testimonials Section -->
+    <section class="client-testimonials" style="background-color: #ffffff;">
+        <h2 class="section-title" style="color: #008C8C; text-align: center;">What Our Clients Say</h2>
+        <div class="testimonials">
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1412652081/photo/ethnic-small-business-owner-smiling-cheerfully-in-her-shop.jpg?b=1&s=612x612&w=0&k=20&c=ob84HF2uA5q40yCjKoCX2aIlEC-o6JiTVXd4yDEKWwM=" alt="Client Sarah" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #008C8C;">
+                </div>
+                <p>"Kanasembo Events made my birthday one to remember. The decor, catering, and entertainment were absolutely amazing!"</p>
+                <h4>- Sarah</h4>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="https://media.istockphoto.com/id/1445597021/photo/black-man-phone-and-social-media-in-city-reading-text-message-or-communication-on-social.jpg?b=1&s=612x612&w=0&k=20&c=CKGhqNY5hiBK6654ZREYzgvSLc4ENQPbNCkCnzSsyLg=" alt="Client Emma" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #008C8C;">
+                </div>
+                <p>"Our themed party was a hit thanks to Kanasembo Events. Every detail was perfect, and the guests loved it!"</p>
+                <h4>- Emma</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="cta-footer" style="background-color: #333; color: white;">
+        <h2>Ready to Transform Your Event?</h2>
+        <p>Contact us today to begin planning your event’s beautiful decor.</p>
+        <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon" style="color: #008C8C;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

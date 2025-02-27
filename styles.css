@@ -43,8 +43,8 @@ nav ul li {
 nav ul li a {  
     text-decoration: none;  
     color: #333;  
-    font-weight: bold;  
-}  
+    font-weight: bold; 
+}
 
 header.sticky {  
     position: fixed;  
@@ -72,10 +72,11 @@ header nav ul li {
 }
 
 header nav ul li a {
-    font-weight: 500;
+    font-weight: 550;
     font-size: 18px;
     color: #3a3a3a;
     transition: color 0.3s ease;
+    
 }
 
 header nav ul li a:hover {
@@ -627,3 +628,67 @@ body {
 .cta-footer .social-media .social-icon:hover {
     color: #ff6f61;
 }
+
+/* DRPDOWN */
+/* Basic Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #007BFF; /* Change color on hover */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none; /* Hidden by default */
+    min-width: 160px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    padding: 0;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  /* Show dropdown menu on hover */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

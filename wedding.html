@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding | Kanasembo Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header style="background-color: #f8f8f8; color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html">Birthday</a></li>
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="decor.html">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation Bar -->
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down -> Hide header
+                header.classList.add("header-hidden");
+            } else {
+                // Scrolling up -> Show header
+                header.classList.remove("header-hidden");
+            }
+            
+            lastScrollTop = currentScroll;
+        });
+    </script>    
+
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1521747116042-b3e6b7f370b5?w=1920&auto=format&fit=crop&q=60'); color: #333">
+        <div class="hero-text">
+            <h1>Your Dream Wedding, Perfected</h1>
+            <p>From intimate ceremonies to grand celebrations, we create a wedding that’s uniquely yours.</p>
+            <a href="services.html" class="cta-button" style="background-color: #008C8C; color: white;">Let’s Plan Your Dream Wedding</a>
+        </div>
+    </div>
+
+    <!-- Wedding Services Section -->
+<section class="wedding-services" style="background-color: #f8f8f8; color: #333;">
+    <h2 class="section-title" style="color: #008C8C; text-align: center;">Our Wedding Services</h2> <!-- This is centered -->
+    <div class="service-grid">
+        <div class="service-item">
+            <i class="fas fa-gift" style="color: #008C8C;"></i>
+            <h3>Venue Setup & Decoration</h3>
+            <p>Elegant and personalized decor for every wedding, designed to transform your venue into a breathtaking space.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-birthday-cake" style="color: #008C8C;"></i>
+            <h3>Catering</h3>
+            <p>Delicious, customized wedding menus that reflect your tastes and the uniqueness of your special day.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-camera" style="color: #008C8C;"></i>
+            <h3>Photography & Videography</h3>
+            <p>Capture your most cherished moments from start to finish with our experienced photographers and videographers.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-calendar-check" style="color: #008C8C;"></i>
+            <h3>Wedding Planning</h3>
+            <p>Let us handle the details, from invitations to the big day. We ensure everything runs smoothly and perfectly.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Wedding Memories Section -->
+<section class="wedding-gallery">
+    <h2 style="color: #008C8C; text-align: center;">Wedding Memories</h2> <!-- This is centered -->
+    <div class="image-gallery">
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/id/519265368/photo/thinking-of-old-times.jpg?b=1&s=612x612&w=0&k=20&c=iErBmfU546S9TnMOmDjIreaTtXrF7FNK3niT1CyLduw=" alt="Wedding Photo 1">
+        </div>
+        
+        <div class="image-item">
+            <img src="https://media.istockphoto.com/id/922421570/photo/printed-wedding-photos-with-the-bride-and-groom-a-vintage-black-camera-and-woman-hands-with.jpg?b=1&s=612x612&w=0&k=20&c=p2hrHIlARRnUVpWFmys_JxpDO1P5jvofN63hE3R3uLg=" alt="Wedding Photo 3">
+        </div>
+    </div>
+</section>
+
+   <!-- Testimonials Section -->
+<section class="wedding-testimonials" style="background-color: #f8f8f8;">
+    <h2 style="color: #008C8C; text-align: center;">What Our Clients Say</h2>
+    <div class="testimonials">
+        <div class="testimonial-item">
+            <div class="testimonial-img">
+                <img src="https://media.istockphoto.com/id/1399000012/photo/guests-throwing-confetti-over-bride-and-groom-as-they-walk-past-after-their-wedding-ceremony.jpg?b=1&s=612x612&w=0&k=20&c=nB79WGyMDUr-E0hwM1fdFIobPZC0bt_C5w6t2lieLck=" alt="Client Sarah" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #008C8C;">
+            </div>
+            <p>"Our wedding was absolutely perfect. Kanasembo Events made our vision come to life!"</p>
+            <h4>- Shy & Fred</h4>
+        </div>
+        <div class="testimonial-item">
+            <div class="testimonial-img">
+                <img src="https://media.istockphoto.com/id/1334542509/photo/elopement-wedding.jpg?b=1&s=612x612&w=0&k=20&c=OGT4P0g-74lPNjX07wupWtL2oobeZJqogn6_vwWTX_M=" alt="Client Emma" style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #008C8C;">
+            </div>
+            <p>"The team was professional, creative, and incredibly accommodating. Highly recommend!"</p>
+            <h4>- David & Stacy</h4>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Footer -->
+    <footer class="cta-footer" style="background-color: #333; color: white;">
+        <h2>Ready to Start Planning Your Dream Wedding?</h2>
+        <p>Contact us today to make your wedding day unforgettable!</p>
+        <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon" style="color: #008C8C;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

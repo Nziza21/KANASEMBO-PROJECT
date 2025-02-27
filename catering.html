@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanasembo Events - Catering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="background-color: #f8f8f8; color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html">Birthday</a></li>
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="decor.html">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down -> Hide header
+                header.classList.add("header-hidden");
+            } else {
+                // Scrolling up -> Show header
+                header.classList.remove("header-hidden");
+            }
+            
+            lastScrollTop = currentScroll;
+        });
+    </script>
+    
+    <!-- Hero Section -->
+    <div class="hero-section" style="background-image: url('https://images.unsplash.com/photo-1595858725732-c39b57cc8be6?w=1000&auto=format&fit=crop'); background-size: cover; background-position: center; color: #333; padding: 60px 0; text-align: center;">
+        <h1 style="font-size: 2rem; font-weight: 700;">Exquisite Catering for Every Occasion</h1>
+        <a href="menu.html" style="background-color: #008C8C; color: white; padding: 15px 30px; font-size: 1rem; text-decoration: none; border-radius: 5px; margin-top: 20px; display: inline-block;">View Menus</a>
+    </div>
+
+    <!-- What We Offer Section -->
+    <section class="what-we-offer" style="background-color: #f8f8f8; padding: 40px 0; text-align: center; color: #333;">
+        <h2 style="font-size: 2rem; color: #008C8C;">What We Offer</h2>
+        <div class="service-description" style="display: flex; justify-content: space-around; align-items: center; margin-top: 20px;">
+            <div class="description-item" style="flex: 1; margin: 20px; text-align: left;">
+                <img src="https://media.istockphoto.com/id/650655146/photo/catering-food-wedding-event-table.jpg?b=1&s=612x612&w=0&k=20&c=y9fPEeFprQp2t_rFFCRqukH0TJKbm4VCk0TNSEHL47k=" alt="Catering Service" style="width: 100%; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 10px;">Customized Menus</h3>
+                <p style="font-size: 1rem;">Choose from a wide variety of dishes, or let us craft a custom menu tailored to your event's theme and dietary preferences.</p>
+            </div>
+            <div class="description-item" style="flex: 1; margin: 20px; text-align: left;">
+                <img src="https://media.istockphoto.com/id/637765812/photo/cuisine-culinary-buffet-dinner-catering-dining-food-celebration.jpg?b=1&s=612x612&w=0&k=20&c=tJESBG2MFNMITgVaff6xmDpqeaPZLAyox6JFgriGipw=" alt="Food Plating" style="width: 100%; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 10px;">Fresh, Local Ingredients</h3>
+                <p style="font-size: 1rem;">We prioritize freshness, using only the finest local ingredients to create dishes that are both delicious and beautiful.</p>
+            </div>
+            <div class="description-item" style="flex: 1; margin: 20px; text-align: left;">
+                <img src="https://media.istockphoto.com/id/1054862736/photo/waiter-carrying-plates-with-meat-dish.jpg?b=1&s=612x612&w=0&k=20&c=FpOrzKhZR04SfAH52XEnEaFFtUmB7-FpPZM6Cek0E2U=" alt="Catering Service" style="width: 100%; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 10px;">Impeccable Service</h3>
+                <p style="font-size: 1rem;">Our highly trained service staff ensures your event runs smoothly, with impeccable service from start to finish.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section class="featured-dishes" style="background-color: white; padding: 40px 0; text-align: center; color: #333;">
+        <h2 style="color: #008C8C; font-size: 2rem;">Featured Dishes</h2>
+        <div class="dish-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px;">
+            <div class="dish-item" style="border: 1px solid #008C8C; padding: 20px; border-radius: 5px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1744118838/photo/the-puff-pastry-filled-with-beef.jpg?b=1&s=612x612&w=0&k=20&c=V_etBotn-7sCajrUtmSGdy30qdnDK-wV7UbohWEXZNA=" alt="Dish 1" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 15px;">Classic Beef Wellington</h3>
+                <p>Deliciously tender beef wrapped in puff pastry, served with rich gravy and roasted vegetables.</p>
+            </div>
+            <div class="dish-item" style="border: 1px solid #008C8C; padding: 20px; border-radius: 5px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1290458111/photo/papaya-salad-1-of-the-top-10-featured-dishes-in-thailand.jpg?b=1&s=612x612&w=0&k=20&c=3RY363Lmws4kZHFQzqmogCtzA1IcPbOjYhSZgIa3Nu8=" alt="Dish 2" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 15px;">Vegan Delight</h3>
+                <p>A delightful blend of grilled vegetables, quinoa, and roasted chickpeas with a zesty dressing.</p>
+            </div>
+            <div class="dish-item" style="border: 1px solid #008C8C; padding: 20px; border-radius: 5px; text-align: center;">
+                <img src="https://media.istockphoto.com/id/1305699663/photo/seafood-platter-grilled-lobster-shrimps-scallops-langoustines-octopus-squid-on-white-plate.jpg?b=1&s=612x612&w=0&k=20&c=mYzHGMS0qrS32u_a0dtg9iOcDUm_1hZKEaPH4Hbrb84=" alt="Dish 3" style="width: 100%; height: auto; border-radius: 5px;">
+                <h3 style="color: #008C8C; margin-top: 15px;">Seafood Platter</h3>
+                <p>A mouth-watering assortment of fresh seafood, including lobster, prawns, and scallops, served with lemon butter sauce.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" style="background-color: #f8f8f8; padding: 40px 0; text-align: center; color: #333;">
+        <h2 style="color: #008C8C; font-size: 2rem; font-weight: 700;">Client Testimonials</h2>
+        <div class="testimonial-slider" style="margin-top: 20px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-item" style="background-color: white; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://images.pexels.com/photos/1191490/pexels-photo-1191490.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Sarah & David" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <blockquote style="font-size: 1.2rem; font-style: italic; color: #555;">
+                    "The catering was absolutely phenomenal! Our guests couldn't stop talking about how delicious everything was!"
+                </blockquote>
+                <p style="font-weight: bold; color: #008C8C;">- Sarah & David</p>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-item" style="background-color: white; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+                <img src="https://images.pexels.com/photos/3261143/pexels-photo-3261143.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Michael & Amanda" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 15px;">
+                <blockquote style="font-size: 1.2rem; font-style: italic; color: #555;">
+                    "Kanasembo Events transformed our wedding day with their outstanding food and impeccable service!"
+                </blockquote>
+                <p style="font-weight: bold; color: #008C8C;">- Michael & Amanda</p>
+            </div>
+        </div>
+    </section>
+    
+
+   <!-- Footer -->
+   <footer class="cta-footer" style="background-color: #333; color: white; padding: 50px 20px; text-align: center;">
+    <h2>Ready to Experience Excellence?</h2>
+    <p>Contact us to plan your next unforgettable event.</p>
+    <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+    <div class="social-media">
+        <a href="https://twitter.com/yourprofile" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/kanasemboevents" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer>

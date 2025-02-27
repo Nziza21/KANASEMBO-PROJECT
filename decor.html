@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanasembo Events | Decor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header style="background-color: #f8f8f8; color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html">Birthday</a></li>
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="decor.html">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down -> Hide header
+                header.classList.add("header-hidden");
+            } else {
+                // Scrolling up -> Show header
+                header.classList.remove("header-hidden");
+            }
+            
+            lastScrollTop = currentScroll;
+        });
+    </script>
+    
+
+    <section class="decor-service-header" style="background-color: #f8f8f8;">
+        <div class="text-content" style="color: #333;">
+            <h2>Transform Your Event with Stunning Decor</h2>
+            <p>At Kanasembo Events, we believe that the right decor can turn any event into an unforgettable experience. Our team of experts crafts custom decor that suits your vision and enhances the atmosphere, whether it’s for a wedding, corporate function, or special celebration.</p>
+        </div>
+    </section>
+
+    <section class="decor-gallery" style="background-color: white; color: black;">
+        <div class="decor-content">
+            <h2 class="services-heading">Our Decor Expertise</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="fas fa-couch"></i>
+                    <h3>Elegant Furnishings</h3>
+                    <p>We provide beautiful and comfortable furnishings that complement your event's theme and ambiance.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-gift"></i>
+                    <h3>Custom Floral Arrangements</h3>
+                    <p>From fresh blooms to luxurious artificial florals, our custom arrangements will elevate your event decor.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Ambient Lighting</h3>
+                    <p>Set the perfect mood with our stunning lighting setups, designed to add magic to every moment.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-ribbon"></i>
+                    <h3>Themed Decor</h3>
+                    <p>We specialize in creating bespoke decor that fits any theme, from rustic chic to modern elegance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="image-gallery">
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/479977238/photo/table-setting-for-an-event-party-or-wedding-reception.jpg?b=1&s=612x612&w=0&k=20&c=IuOEuuoZQYp626Re_zv33gAIsBf2UkJmgVboNLLGibo=" alt="Decor 1">
+        </div>
+        <div class="image">
+            <img src="https://media.istockphoto.com/id/1251525020/photo/wedding-table-set-up-in-boho-style-with-pampas-grass-and-greenery.jpg?b=1&s=612x612&w=0&k=20&c=9YDuxKDSsJ_ED1TLMxuW2VCxmob8MePF8LBdEDXKmGI=" alt="Decor 2">
+        </div>
+    </section>
+
+    <footer class="cta-footer" style="background-color: #333; color: white;">
+        <h2>Ready to Transform Your Event?</h2>
+        <p>Contact us today to begin planning your event’s beautiful decor.</p>
+        <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon" style="color: #008C8C;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanasembo Events - Catering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header style="background-color: #f8f8f8; color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html">Birthday</a></li>
+                        <li><a href="wedding.html">Wedding</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="catering.html">Catering</a></li>
+                        <li><a href="decor.html">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector("header");
+    
+        window.addEventListener("scroll", function () {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down -> Hide header
+                header.classList.add("header-hidden");
+            } else {
+                // Scrolling up -> Show header
+                header.classList.remove("header-hidden");
+            }
+            
+            lastScrollTop = currentScroll;
+        });
+    </script>    
+
+    <!-- Menu Section -->
+    <section class="menu-section" style="padding: 60px 0; text-align: center;">
+        <h1 style="color: #008C8C; font-size: 3rem;">Our Delicious Menu</h1>
+        <p style="font-size: 1.2rem; color: #555;">Explore our wide variety of dishes, prepared with the finest ingredients. Whatever the occasion, we have something to delight every taste!</p>
+        
+        <!-- Appetizers -->
+        <div class="menu-category" style="margin-top: 40px;">
+            <h2 style="color: #008C8C; font-size: 2.5rem;">Appetizers</h2>
+            <div class="menu-items" style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap;">
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/1371154829/photo/fried-spring-roll-with-chicken-vietnamese-food-top-view.jpg?b=1&s=612x612&w=0&k=20&c=Zag84rWs2XzStqi1DnoZoTnpcITZJfymvI12yTSWRsQ=" alt="Spring Rolls" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Crispy Spring Rolls</h3>
+                    <p style="font-size: 1rem; color: #555;">Fresh, crunchy spring rolls filled with vegetables and served with a tangy dipping sauce.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 1,200</p>
+                </div>
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/1410877204/photo/stuffed-mushrooms.jpg?b=1&s=612x612&w=0&k=20&c=66lXenRofd8OGyXxRhJcjmQm-33cy9uZDxM0dOQrh-A=" alt="Stuffed Mushrooms" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Stuffed Mushrooms</h3>
+                    <p style="font-size: 1rem; color: #555;">Mushrooms stuffed with garlic, herbs, and cheese, baked to perfection.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 1,500</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Courses -->
+        <div class="menu-category" style="margin-top: 60px;">
+            <h2 style="color: #008C8C; font-size: 2.5rem;">Main Courses</h2>
+            <div class="menu-items" style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap;">
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/538168264/photo/vegetable-and-meat-skewers-in-a-herb-marinade.jpg?b=1&s=612x612&w=0&k=20&c=YXzvM296pgfe9G5uP1KsDF54vA1Y7u_vOxxD1Cd2C0I=" alt="Grilled Chicken" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Grilled Herb Chicken</h3>
+                    <p style="font-size: 1rem; color: #555;">Juicy grilled chicken marinated with fresh herbs, served with roasted vegetables.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 2,000</p>
+                </div>
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/972852490/photo/bbq-sirloin-steaks-with-fresh-thyme.jpg?b=1&s=612x612&w=0&k=20&c=zQqGc0hbQWkffD4rHzNtcdU4uX6VxrJs6VbjuHuSb0c=" alt="Beef Steak" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Grilled Beef Steak</h3>
+                    <p style="font-size: 1rem; color: #555;">A perfectly grilled beef steak, served with garlic mashed potatoes and a side of sautéed vegetables.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 3,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category" style="margin-top: 60px;">
+            <h2 style="color: #008C8C; font-size: 2.5rem;">Desserts</h2>
+            <div class="menu-items" style="margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap;">
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/1227551348/photo/homemade-triple-layer-chocolate-cake.jpg?b=1&s=612x612&w=0&k=20&c=oN_gQWvjK6PCCig0nxY2xgTHsSHA7f4I1WPyW41dJVY=" alt="Chocolate Cake" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Decadent Chocolate Cake</h3>
+                    <p style="font-size: 1rem; color: #555;">Rich, moist chocolate cake with a velvety smooth chocolate ganache.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 2,000</p>
+                </div>
+                <div class="menu-item" style="margin: 0 20px; text-align: center; width: 30%;">
+                    <img src="https://media.istockphoto.com/id/611625984/photo/delicious-raspberry-mini-tarts-on-dark-background.jpg?b=1&s=612x612&w=0&k=20&c=ZMGtETrgjulWZtrfyE7ho2H3tZrXwGZVIem68rki2iw=" alt="Fruit Tart" style="width: 100%; height: auto; border-radius: 8px;">
+                    <h3 style="color: #333; margin-top: 10px;">Fresh Fruit Tart</h3>
+                    <p style="font-size: 1rem; color: #555;">A delightful tart filled with fresh seasonal fruits and a creamy custard base.</p>
+                    <p class="price" style="font-size: 1.2rem; color: #008C8C; font-weight: bold;">KES 1,300</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="cta-footer" style="background-color: #333; color: white; padding: 50px 20px; text-align: center;">
+        <h2>Ready to Experience Excellence?</h2>
+        <p>Contact us to plan your next unforgettable event.</p>
+        <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
