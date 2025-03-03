@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kanasembo Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section with no background color -->
+    <header style="color: #008C8C;">
+        <div class="logo" style="color: #008C8C;">Kanasembo Events</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: #008C8C;">Home</a></li>
+                <li><a href="About us.html" style="color: #008C8C;">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#" style="color: #008C8C;">Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Birthday.html" style="color: #008C8C;">Birthday</a></li>
+                        <li><a href="wedding.html" style="color: #008C8C;">Wedding</a></li>
+                        <li><a href="photography.html" style="color: #008C8C;">Photography</a></li>
+                        <li><a href="catering.html" style="color: #008C8C;">Catering</a></li>
+                        <li><a href="decor.html" style="color: #008C8C;">Decor</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" style="color: #008C8C;">Gallery</a></li>
+                <li><a href="contact.html" style="color: #008C8C;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+    
+        window.addEventListener('scroll', function() {
+            let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                header.style.top = '-100px'; // Adjust this value to the height of your header
+            } else {
+                // Scrolling up
+                header.style.top = '0';
+            }
+            
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative values
+        });
+    </script>
+    
+    <!-- Gallery Section with seamless header transition -->
+    <section class="gallery-intro" style="background-color: #f8f8f8; color: #333;">
+        <h1>Gallery</h1>
+        <p>Explore our stunning event moments captured through photography and design.</p>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="image-gallery">
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/175559502/photo/classy-wedding-setting.jpg?b=1&s=612x612&w=0&k=20&c=Qs9E1DJ9gYpUxY8m2daotaZuAmSCGuV9WK1F0R5ZGaA=" alt="Event 1">
+    </div>
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/1124503111/photo/big-family-garden-party-celebration-gathered-together-at-the-table-family-friends-and.jpg?b=1&s=612x612&w=0&k=20&c=BODnk_O0uPu1ljkaU4tB6Xx8NSYX6D7y8E1H1bNVslg=" alt="Event 2">
+    </div>
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/1485121690/photo/a-retro-living-room-with-fast-food.jpg?b=1&s=612x612&w=0&k=20&c=uUoTqsVLaOgM26GdFqSAwPz6NwyyzIBehH7cEMGO_xY=" alt="Event 3">
+    </div>
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/1149048790/photo/elderly-couple-talking-while-sitting-in-theater.jpg?b=1&s=612x612&w=0&k=20&c=M7SqFDxY9AVS7jspd5y-R-W7TWG0ZSV6rDWo9OoBPT4=" alt="Event 4">
+    </div>
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/1728056172/photo/chalet-with-halloween-decoration-living-room-interior-with-pumpkins-armchair-and-fireplace.jpg?b=1&s=612x612&w=0&k=20&c=Hu3N5oTZVrw3ShoEo1FBvzNOfDMG86hRh4ews69XoVU=" alt="Event 5">
+    </div>
+    <div class="image">
+        <img src="https://media.istockphoto.com/id/1144248362/photo/blurred-bokeh-light-on-sunset-with-yellow-string-lights-decor-in-beach-restaurant.jpg?b=1&s=612x612&w=0&k=20&c=Mzjz7c8eSp8vLbul37E_gXC1s09m-mRZjSRv8x0-B0o=" alt="Event 6">
+    </div>
+    <!-- Add more images as needed -->
+</section>
+
+
+    <!-- Footer with a call to action -->
+    <footer class="cta-footer" style="background-color: #333; color: white;">
+        <h2>Ready to Experience Excellence?</h2>
+        <p>Contact us to plan your next unforgettable event.</p>
+        <a href="http://127.0.0.1:5500/contact.html">
+            <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
+        </a> 
+        <div class="social-media">
+            <a href="https://twitter.com/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kanasemboevents" class="social-icon" style="color: #008C8C;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourprofile" class="social-icon" style="color: #008C8C;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

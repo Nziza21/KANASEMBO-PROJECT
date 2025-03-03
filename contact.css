@@ -182,7 +182,7 @@ footer p {
     background: linear-gradient(145deg, #f5f5f5, #e4e4e4); /* Soft beige gradient */
     padding: 40px 20px; /* Padding inside the box */
     border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     display: inline-block; /* Keep it centered */
 }
 
