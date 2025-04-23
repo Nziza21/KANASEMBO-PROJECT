@@ -3,69 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Our Services - Kanasembo Events</title>
+    <link rel="stylesheet" href="services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body class="services-page">
-
+<body>
+    <!-- Navigation Bar -->
     <header>
         <div class="logo">Kanasembo Events</div>
-        <nav aria-label="Main Navigation">
+        <nav>
             <ul>
-                <li><a href="index.html" style="color: #008C8C;">Home</a></li>
-                <li><a href="About us.html" style="color: #008C8C;">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#" style="color: #008C8C;">Services</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="Birthday.html" style="color: #008C8C;">Birthday</a></li>
-                        <li><a href="wedding.html" style="color: #008C8C;">Wedding</a></li>
-                        <li><a href="photography.html" style="color: #008C8C;">Photography</a></li>
-                        <li><a href="catering.html" style="color: #008C8C;">Catering</a></li>
-                        <li><a href="decor.html" style="color: #008C8C;">Decor</a></li>
-                    </ul>
-                </li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>    
+    </header>
 
-    <section class="services-hero">
-        <h1>Our Services</h1>
-        <p>Explore our expertise in creating unforgettable events tailored to your needs.</p>
-    </section>
+    <!-- Hero Section -->
+    <section class="services-intro-luxe">
+        <div class="inner-container">
+          <h2 class="headline">Explore Our Services</h2>
+          <p class="subtext">Every celebration deserves something extraordinary</p>
+        </div>
+      </section>
 
-    <section class="services-overview">
-        <h2>Our Expertise</h2>
-        <div class="service-grid">
-            <div class="service-item">
-                <i class="fas fa-camera"></i>
-                <h3>Photography</h3>
-                <p>Capture every unforgettable moment with our professional photographers.</p>
+    <!-- Services Slider -->
+    <section class="services-slider">
+        <div class="slider-container">
+            <div class="service-card" onclick="location.href='Birthday.html'">
+                <img src="Pictures/WhatsApp Image 2025-03-18 at 14.04.49.jpeg" alt="Birthday">
+                <div class="card-overlay">
+                    <h3>Birthday</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="service-item">
-                <i class="fas fa-birthday-cake"></i>
-                <h3>Catering</h3>
-                <p>Indulge in our custom-designed menus, crafted to elevate your event.</p>
+
+            <div class="service-card" onclick="location.href='wedding.html'">
+                <img src="Pictures/WhatsApp Image 2025-03-18 at 14.05.09 (1).jpeg" alt="Wedding">
+                <div class="card-overlay">
+                    <h3>Wedding</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="service-item">
-                <i class="fas fa-gift"></i>
-                <h3>Decor</h3>
-                <p>Transform your venue with luxurious, personalized decor.</p>
+
+            <div class="service-card" onclick="location.href='photography.html'">
+                <img src="Pictures/WhatsApp Image 2025-03-18 at 14.05.05 (1).jpeg" alt="Photography">
+                <div class="card-overlay">
+                    <h3>Photography</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
-            <div class="service-item">
-                <i class="fas fa-users"></i>
-                <h3>Event Planning</h3>
-                <p>From start to finish, we plan and execute your vision with perfection.</p>
+
+            <div class="service-card" onclick="location.href='catering.html'">
+                <img src="Pictures/WhatsApp Image 2025-03-18 at 14.04.48.jpeg" alt="Catering">
+                <div class="card-overlay">
+                    <h3>Catering</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+
+            <div class="service-card" onclick="location.href='decor.html'">
+                <img src="Pictures/WhatsApp Image 2025-03-18 at 14.04.49 (1).jpeg" alt="Decor">
+                <div class="card-overlay">
+                    <h3>Decor</h3>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="cta-footer">
-        <h2>Ready to Experience Excellence?</h2>
-        <p>Contact us to plan your next unforgettable event.</p>
+        <h2>Ready to Start Planning Your Dream Wedding?</h2>
+        <p>Contact us today to make your wedding day unforgettable!</p>
         <a href="http://127.0.0.1:5500/contact.html">
             <button class="contact-btn" style="background-color: #008C8C; color: white;">Get in Touch</button>
         </a> 
@@ -74,7 +87,6 @@
             <a href="https://www.instagram.com/kanasemboevents" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/yourprofile" class="social-icon"><i class="fab fa-linkedin"></i></a>
         </div>
-    </footer>
-
+    </footer>   
 </body>
 </html>
